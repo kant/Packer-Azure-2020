@@ -1,0 +1,14 @@
+{
+    "client_id": "INSERT HERE CLIENT ID OF YOUR AZURE SPN",
+    "client_secret": "INSERT HERE CLIENT SECRET OF YOUR AZURE SPN",
+    "subscription_id": "INSERT HERE YOUR AZURE SUBSCRIPTION ID",
+    "object_id": "INSERT HERE OBJECT ID OF YOUR AZURE SPN",
+    "tenant_id": "INSERT HERE YOUR AZURE ACTIVE DIRECTORY ID",
+    "resource_group_name": "INSERT HERE THE RESSOURCE GROUP NAME WHERE IMAGE BUILT WILL BE STORED",
+    "tag_madewith": "Packer 1.6.4",
+    "tag_creator": "INSERT HERE CREATOR OF THIS IMAGE",
+    "tag_usage": "INSERT HERE THE PURPOSE OF THIS IMAGE",
+    "azure_region": "INSERT HERE THE NAME OF AZURE REGION",
+    "vm_image_name": "INSERT HERE THE NAME OF BUILT VM IMAGE",
+    "vm_size_for_building": "INSERT HERE THE SIZE OF VM USED BY PACKER TO BUILD IMAGE"
+}
