@@ -34,7 +34,7 @@ jobs:
       # Runs a single command using the runners shell
       # Packer validate
       - name: Validate Packer template
-        run: packer validate -var 'client_id=${{ secrets.CLIENT_ID }}' -var 'client_secret=${{ secrets.CLIENT_SECRET }}' -var 'subscription_id=${{ secrets.SUBSCRIPTION_ID }}' -var 'object_id=${{ secrets.OBJECT_ID }}' -var 'tenant_id=${{ secrets.TENANT_ID }}' -var 'resource_group_name=${{ secrets.RESOURCE_GROUP_NAME }}' -var 'tag_madewith=${{ secrets.TAG_MADEWITH }}' -var 'tag_creator=${{ secrets.TAG_CREATOR }}' -var 'tag_usage=${{ secrets.TAG_USAGE }}'  -var 'azure_region=${{ secrets.AZURE_REGION }}' -var 'vm_image_name=${{ secrets.VM_IMAGE_NAME }}' -var 'vm_size_for_building=${{ secrets.VM_SIZE_FOR_BUILDING }}'  Win2019-IIS-Packer-withvars.json -force
+        run: packer validate -var 'client_id=${{ secrets.CLIENT_ID }}' -var 'client_secret=${{ secrets.CLIENT_SECRET }}' -var 'subscription_id=${{ secrets.SUBSCRIPTION_ID }}' -var 'object_id=${{ secrets.OBJECT_ID }}' -var 'tenant_id=${{ secrets.TENANT_ID }}' -var 'resource_group_name=${{ secrets.RESOURCE_GROUP_NAME }}' -var 'tag_madewith=${{ secrets.TAG_MADEWITH }}' -var 'tag_creator=${{ secrets.TAG_CREATOR }}' -var 'tag_usage=${{ secrets.TAG_USAGE }}'  -var 'azure_region=${{ secrets.AZURE_REGION }}' -var 'vm_image_name=${{ secrets.VM_IMAGE_NAME }}' -var 'vm_size_for_building=${{ secrets.VM_SIZE_FOR_BUILDING }}'  Win2019-IIS-Packer-withvars.json
 
       # build VM image in Azure
       - name: Build Packer template
