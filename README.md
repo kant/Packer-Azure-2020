@@ -3,7 +3,7 @@
 Packer is an open source tool for creating identical machine images for multiple platforms from a single source configuration. Packer is lightweight, runs on every major operating system, and is highly performant, creating machine images for multiple platforms in parallel. Packer does not replace configuration management like Chef or Ansible. In fact, when building images, Packer is able to use tools like Chef or Ansible to install and configure software onto the image. Packer only builds images. It does not attempt to manage them in any way. After they're built, it is up to you to launch or destroy them as you see fit..
 
 
---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 The purpose of this repositary is to help you to start using Packer to build your custom VM images on Microsoft Azure Cloud.
 
 --------------------------------------------------------------------------------------------------------
