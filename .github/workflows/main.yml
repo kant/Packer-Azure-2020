@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+# This is a basic workflow to create a VM image with Packer
 
 name: CI
 
@@ -38,5 +38,5 @@ jobs:
 
       # build VM image in Azure
       - name: Build Packer template
-        run: packer build Win2019-IIS-Packer-withvars.json
+        run: packer build -var 'client_id=$(CLIENT_ID)' -var 'client_secret=$(CLIENT_SECRET)' -var 'subscription_id=$(SUBSCRIPTION_ID)' -var 'object_id=$(OBJECT_ID)' -var 'tenant_id=$(TENANT_ID)' -var 'resource_group_name=$(RESOURCE_GROUP_NAME)' -var 'tag_madewith=$(TAG_MADEWITH)' -var 'tag_creator=$(TAG_CREATOR)' -var 'tag_usage=$(TAG_USAGE)'  -var 'azure_region=$(AZURE_REGION)' -var 'vm_image_name=$(VM_IMAGE_NAME)' -var 'vm_size_for_building=$(VM_SIZE_FOR_BUILDING)'  Win2019-IIS-Packer-withvars.json
 
