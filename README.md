@@ -4,7 +4,7 @@ Packer is an open source tool for creating identical machine images for multiple
 
 
 ---------------------------------------------------------------------------------------------------------
-The purpose of this repositary is to help you to start using Packer to build your custom VM images on Microsoft Azure Cloud.
+The purpose of this repository is to help you to start using Packer to build your custom VM images on Microsoft Azure Cloud.
 
 --------------------------------------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ Create a Resource Group for VM Images that will be build with Packer
 JSON File section used by Packer are the following: 
 - ``"variables": ["..."],``        ==> variables
 - ``"builders": ["..."],``         ==> provider where image is build, Connection information, VM size to prepare image...
-- ``"provisioners": ["..."]``      ==> add functionnalities, install applications, execute configuration scripts, Configuration Manager tools (Chef, Puppet, Ansible..)...
+- ``"provisioners": ["..."]``      ==> add functionalities, install applications, execute configuration scripts, Configuration Manager tools (Chef, Puppet, Ansible..)...
 
 All Packer-name.json files in this repo are example you can use and adapt.
 
